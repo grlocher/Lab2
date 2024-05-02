@@ -1,7 +1,7 @@
 name = input('What is your name? ')
 
 while True:
-    x = input(name + ' enter an integer between 1 and 100 >> ')
+    x = input(name + ', enter an integer between 1 and 100 >> ')
     x = int(x)
 
     if 1 <= x <= 100:
