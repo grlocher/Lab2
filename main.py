@@ -1,7 +1,13 @@
 name = input('What is your name? ')
 
-x = input(name + ' enter an integer between 1 and 100 >> ')
-x = int(x)
+while True:
+    x = input(name + ' enter an integer between 1 and 100 >> ')
+    x = int(x)
+
+    if 1 <= x <= 100:
+        break
+    else:
+        print('Invalid number, try again')
 
 # If the integer entered is odd and less than 60, print the number entered and “Odd and less than 60.”
 if x % 2 != 0 and x < 60:
